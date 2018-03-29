@@ -1,0 +1,21 @@
+title = "login"
+url = "/login"
+layout = "login"
+is_hidden = 0
+
+[account]
+redirect = "index"
+paramCode = "code"
+forceSecure = 1
+
+[session]
+security = "guest"
+redirect = "index"
+==
+{% framework %}
+
+{% flash %}
+    <div class="alert alert-{{ type == 'error' ? 'danger' : type }}">{{ message }}</div>
+{% endflash %}
+
+{% component 'account' %}

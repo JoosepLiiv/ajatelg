@@ -1,0 +1,55 @@
+1522235841a:1:{s:9:"login.htm";a:6:{s:8:"fileName";s:9:"login.htm";s:7:"content";s:1006:"description = "login page layout"
+==
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="">
+	
+	<title>Tartu KHK IKT osakonna ajatelg</title>
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ "assets/css/style_login.css"|theme }}" media="screen" />
+
+	<link rel="stylesheet" href="{{ "assets/css/magnific.css"|theme }}" />
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{{ "assets/js/magnific.js"|theme }}"></script>
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ "assets/images/favicon.ico" | theme }}">
+</head>
+
+<body>
+	
+ {% page %}
+
+</body>
+</html>";s:5:"mtime";i:1522151726;s:6:"markup";s:969:"<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="">
+	
+	<title>Tartu KHK IKT osakonna ajatelg</title>
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ "assets/css/style_login.css"|theme }}" media="screen" />
+
+	<link rel="stylesheet" href="{{ "assets/css/magnific.css"|theme }}" />
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{{ "assets/js/magnific.js"|theme }}"></script>
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ "assets/images/favicon.ico" | theme }}">
+</head>
+
+<body>
+	
+ {% page %}
+
+</body>
+</html>";s:4:"code";N;s:11:"description";s:17:"login page layout";}}

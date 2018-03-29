@@ -1,0 +1,68 @@
+1522235838a:1:{s:9:"index.htm";a:11:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:1441:"title = "index"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[entries]
+
+[session]
+security = "user"
+redirect = "login"
+==
+<div id="timeline">
+		<ul id="dates">
+		{% for entry in entries %}
+		    <li class="{{ entry.color }}"><a href="#{{ entry.date|date('F jS, Y') }}">{{ entry.date|etdate("%BP </br> %Y") }}</a></li>
+		{% endfor %}
+		</ul>
+		<ul id="issues">
+			<!-- <li id="1900">
+				<img src="{{ "assets/images/1.png"|theme }}" width="256" height="256" />
+				<h1>1900</h1> 
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li> -->
+			{% for entry in entries %}
+    			<li class="syndmus" id="{{ entry.date|date('F jS, Y') }}">
+    			    <h1>{{ entry.title }}</h1>
+    			    <p>{{ entry.text|raw }}</p>
+    			</li>
+			{% endfor %}
+		</ul>
+		<a href="#" id="next">+</a>
+		<a href="#" id="prev">-</a>
+	</div>
+	<div id="logout">
+	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
+	</div>
+	{% framework %}
+	<script>
+	
+	</script>";s:5:"mtime";i:1522132520;s:6:"markup";s:1320:"<div id="timeline">
+		<ul id="dates">
+		{% for entry in entries %}
+		    <li class="{{ entry.color }}"><a href="#{{ entry.date|date('F jS, Y') }}">{{ entry.date|etdate("%BP </br> %Y") }}</a></li>
+		{% endfor %}
+		</ul>
+		<ul id="issues">
+			<!-- <li id="1900">
+				<img src="{{ "assets/images/1.png"|theme }}" width="256" height="256" />
+				<h1>1900</h1> 
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li> -->
+			{% for entry in entries %}
+    			<li class="syndmus" id="{{ entry.date|date('F jS, Y') }}">
+    			    <h1>{{ entry.title }}</h1>
+    			    <p>{{ entry.text|raw }}</p>
+    			</li>
+			{% endfor %}
+		</ul>
+		<a href="#" id="next">+</a>
+		<a href="#" id="prev">-</a>
+	</div>
+	<div id="logout">
+	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
+	</div>
+	{% framework %}
+	<script>
+	
+	</script>";s:4:"code";N;s:5:"title";s:5:"index";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"entries";a:0:{}s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:5:"login";}}}

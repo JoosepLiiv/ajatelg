@@ -1,0 +1,16 @@
+{% if not user %}
+
+    <div class="row">
+
+        <div class="col-md-6 login">
+            <h3>Sign in</h3>
+            {% partial __SELF__ ~ '::signin' %}
+        </div>
+
+    </div>
+
+{% else %}
+
+    {% partial __SELF__ ~ '::activation_check' %}
+
+{% endif %}
