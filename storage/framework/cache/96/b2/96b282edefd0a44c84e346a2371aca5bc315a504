@@ -1,4 +1,4 @@
-1522235838a:1:{s:9:"index.htm";a:11:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:1441:"title = "index"
+1524555360a:1:{s:9:"index.htm";a:11:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:1582:"title = "index"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -9,6 +9,16 @@ is_hidden = 0
 security = "user"
 redirect = "login"
 ==
+<div id="header">
+    <div id="header-logo">
+    </div>
+    <div id="header-title">
+        IKT OSAKONNA AJATELG
+    </div>
+    <div id="logout">
+	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
+	</div>
+</div>
 <div id="timeline">
 		<ul id="dates">
 		{% for entry in entries %}
@@ -31,13 +41,20 @@ redirect = "login"
 		<a href="#" id="next">+</a>
 		<a href="#" id="prev">-</a>
 	</div>
-	<div id="logout">
-	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
-	</div>
 	{% framework %}
 	<script>
 	
-	</script>";s:5:"mtime";i:1522132520;s:6:"markup";s:1320:"<div id="timeline">
+	</script>";s:5:"mtime";i:1524042551;s:6:"markup";s:1461:"<div id="header">
+    <div id="header-logo">
+    </div>
+    <div id="header-title">
+        IKT OSAKONNA AJATELG
+    </div>
+    <div id="logout">
+	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
+	</div>
+</div>
+<div id="timeline">
 		<ul id="dates">
 		{% for entry in entries %}
 		    <li class="{{ entry.color }}"><a href="#{{ entry.date|date('F jS, Y') }}">{{ entry.date|etdate("%BP </br> %Y") }}</a></li>
@@ -58,9 +75,6 @@ redirect = "login"
 		</ul>
 		<a href="#" id="next">+</a>
 		<a href="#" id="prev">-</a>
-	</div>
-	<div id="logout">
-	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
 	</div>
 	{% framework %}
 	<script>

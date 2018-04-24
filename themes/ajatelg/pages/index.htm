@@ -9,6 +9,16 @@ is_hidden = 0
 security = "user"
 redirect = "login"
 ==
+<div id="header">
+    <div id="header-logo">
+    </div>
+    <div id="header-title">
+        IKT OSAKONNA AJATELG
+    </div>
+    <div id="logout">
+	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
+	</div>
+</div>
 <div id="timeline">
 		<ul id="dates">
 		{% for entry in entries %}
@@ -30,9 +40,6 @@ redirect = "login"
 		</ul>
 		<a href="#" id="next">+</a>
 		<a href="#" id="prev">-</a>
-	</div>
-	<div id="logout">
-	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
 	</div>
 	{% framework %}
 	<script>

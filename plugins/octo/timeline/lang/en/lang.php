@@ -12,7 +12,7 @@
         'text_placeholder' => 'Describe something amazing for your visitors!',
         'public' => 'Public Post',
         'public_desc' => 'If enabled, post will be visible to all visitors. If disabled - only post author.',
-        'date' => 'Start Date',
+        'date' => 'Date',
         'end_date' => 'End Date',
         'time' => 'Event Time',
         'create' => 'Create Entry',
@@ -25,8 +25,7 @@
     'list' => [
         'id' => 'ID',
         'title' => 'Title',
-        'date' => 'Start Date',
-        'end_date' => 'End Date',
+        'date' => 'Date',
         'public' => 'Public',
         'yes' => 'Yes',
         'no' => 'No',

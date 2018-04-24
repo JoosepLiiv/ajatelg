@@ -35,8 +35,13 @@ class __TwigTemplate_738dc4de25da9746c6626d1d019c06fb021c525d48147b3bff1f9dda367
         }
         $context["type"] = $_type;        $context["message"] = $_message;        // line 6
         echo "
-";
+<div id=\"logo\"><img src=\"";
         // line 7
+        echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/KHK_logod_kurv-01.png");
+        echo "\" /></div>
+
+";
+        // line 9
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("account"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
@@ -54,7 +59,7 @@ class __TwigTemplate_738dc4de25da9746c6626d1d019c06fb021c525d48147b3bff1f9dda367
 
     public function getDebugInfo()
     {
-        return array (  40 => 7,  37 => 6,  28 => 4,  25 => 3,  22 => 2,  19 => 1,);
+        return array (  45 => 9,  40 => 7,  37 => 6,  28 => 4,  25 => 3,  22 => 2,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -64,6 +69,8 @@ class __TwigTemplate_738dc4de25da9746c6626d1d019c06fb021c525d48147b3bff1f9dda367
 {% flash %}
     <div class=\"alert alert-{{ type == 'error' ? 'danger' : type }}\">{{ message }}</div>
 {% endflash %}
+
+<div id=\"logo\"><img src=\"{{ 'assets/images/KHK_logod_kurv-01.png' | theme }}\" /></div>
 
 {% component 'account' %}", "/home/ajatelgiktkhk/public_html/themes/ajatelg/pages/login.htm", "");
     }

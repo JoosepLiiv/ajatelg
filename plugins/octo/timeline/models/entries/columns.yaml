@@ -15,11 +15,6 @@ columns:
         type: date
         searchable: true
         sortable: true
-    end_date:
-        label: 'octo.timeline::lang.list.end_date'
-        type: date
-        searchable: true
-        sortable: true
     public:
         label: 'octo.timeline::lang.list.public'
         type: partial

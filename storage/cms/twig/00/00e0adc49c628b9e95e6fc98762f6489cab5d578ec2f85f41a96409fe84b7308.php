@@ -20,31 +20,32 @@ class __TwigTemplate_43b890835e7800a2888ce2dae6c14d072134262654f402e2e6041d8cb6c
 <head>
 \t<meta charset=\"utf-8\">
 \t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">
-\t<meta name=\"author\" content=\"\">
+\t<meta name=\"author\" content=\"Joosep & Lars\">
+\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
 \t
 \t<title>Tartu KHK IKT osakonna ajatelg</title>
 \t<link href=\"https://fonts.googleapis.com/css?family=Rubik\" rel=\"stylesheet\">
 \t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
 \t<link rel=\"stylesheet\" href=\"";
-        // line 10
+        // line 11
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/css/style_login.css");
         echo "\" media=\"screen\" />
 
 \t<link rel=\"stylesheet\" href=\"";
-        // line 12
+        // line 13
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/css/magnific.css");
         echo "\" />
 \t
     <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
     <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
     <script src=\"";
-        // line 16
+        // line 17
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/magnific.js");
         echo "\"></script>
     
     <!-- favicon -->
     <link rel=\"shortcut icon\" href=\"";
-        // line 19
+        // line 20
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/favicon.ico");
         echo "\">
 </head>
@@ -52,9 +53,9 @@ class __TwigTemplate_43b890835e7800a2888ce2dae6c14d072134262654f402e2e6041d8cb6c
 <body>
 \t
  ";
-        // line 24
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 25
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 26
         echo "
 </body>
 </html>";
@@ -72,7 +73,7 @@ class __TwigTemplate_43b890835e7800a2888ce2dae6c14d072134262654f402e2e6041d8cb6c
 
     public function getDebugInfo()
     {
-        return array (  58 => 25,  56 => 24,  48 => 19,  42 => 16,  35 => 12,  30 => 10,  19 => 1,);
+        return array (  59 => 26,  57 => 25,  49 => 20,  43 => 17,  36 => 13,  31 => 11,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -81,7 +82,8 @@ class __TwigTemplate_43b890835e7800a2888ce2dae6c14d072134262654f402e2e6041d8cb6c
 <head>
 \t<meta charset=\"utf-8\">
 \t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">
-\t<meta name=\"author\" content=\"\">
+\t<meta name=\"author\" content=\"Joosep & Lars\">
+\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
 \t
 \t<title>Tartu KHK IKT osakonna ajatelg</title>
 \t<link href=\"https://fonts.googleapis.com/css?family=Rubik\" rel=\"stylesheet\">

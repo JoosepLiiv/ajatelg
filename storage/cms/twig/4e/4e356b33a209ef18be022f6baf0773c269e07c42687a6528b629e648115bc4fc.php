@@ -19,32 +19,26 @@ class __TwigTemplate_64e66e75ca1bdaa9c74b08641c532957b73b5c23cbcfcd2d2651b6e9249
         echo "<form
     data-request=\"onSignin\">
     <div class=\"form-group\">
-        <label for=\"userSigninLogin\">";
-        // line 4
-        echo twig_escape_filter($this->env, ($context["loginAttributeLabel"] ?? null), "html", null, true);
-        echo "</label>
+        <label for=\"userSigninLogin\">Kasutaja</label>
         <input
             name=\"login\"
             type=\"text\"
             class=\"form-control\"
             id=\"userSigninLogin\"
-            placeholder=\"Enter your ";
-        // line 10
-        echo twig_escape_filter($this->env, twig_lower_filter($this->env, ($context["loginAttributeLabel"] ?? null)), "html", null, true);
-        echo "\" />
+            placeholder=\"Sisesta kasutaja\" />
     </div>
 
     <div class=\"form-group\">
-        <label for=\"userSigninPassword\">Password</label>
+        <label for=\"userSigninPassword\">Parool</label>
         <input
             name=\"password\"
             type=\"password\"
             class=\"form-control\"
             id=\"userSigninPassword\"
-            placeholder=\"Enter your password\" />
+            placeholder=\"Sisesta parool\" />
     </div>
 
-    <button type=\"submit\" class=\"btn btn-default\">Sign in</button>
+    <button type=\"submit\" class=\"btn btn-default\">Logi sisse</button>
 </form>";
     }
 
@@ -53,14 +47,9 @@ class __TwigTemplate_64e66e75ca1bdaa9c74b08641c532957b73b5c23cbcfcd2d2651b6e9249
         return "/home/ajatelgiktkhk/public_html/plugins/rainlab/user/components/account/signin.htm";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  33 => 10,  24 => 4,  19 => 1,);
+        return array (  19 => 1,);
     }
 
     public function getSourceContext()
@@ -68,26 +57,26 @@ class __TwigTemplate_64e66e75ca1bdaa9c74b08641c532957b73b5c23cbcfcd2d2651b6e9249
         return new Twig_Source("<form
     data-request=\"onSignin\">
     <div class=\"form-group\">
-        <label for=\"userSigninLogin\">{{ loginAttributeLabel }}</label>
+        <label for=\"userSigninLogin\">Kasutaja</label>
         <input
             name=\"login\"
             type=\"text\"
             class=\"form-control\"
             id=\"userSigninLogin\"
-            placeholder=\"Enter your {{ loginAttributeLabel|lower }}\" />
+            placeholder=\"Sisesta kasutaja\" />
     </div>
 
     <div class=\"form-group\">
-        <label for=\"userSigninPassword\">Password</label>
+        <label for=\"userSigninPassword\">Parool</label>
         <input
             name=\"password\"
             type=\"password\"
             class=\"form-control\"
             id=\"userSigninPassword\"
-            placeholder=\"Enter your password\" />
+            placeholder=\"Sisesta parool\" />
     </div>
 
-    <button type=\"submit\" class=\"btn btn-default\">Sign in</button>
+    <button type=\"submit\" class=\"btn btn-default\">Logi sisse</button>
 </form>", "/home/ajatelgiktkhk/public_html/plugins/rainlab/user/components/account/signin.htm", "");
     }
 }

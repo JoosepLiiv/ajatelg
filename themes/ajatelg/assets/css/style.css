@@ -8,10 +8,35 @@ body {
 	color: #000;
 	font-size: 14px;
 	font-family:'Rubik',sans-serif;
-    background: #ebebe0 url(../images/dot10.gif) left 45px repeat-x;
+    background: #ebebe0 url(../images/dot10.gif) left 105px repeat-x;
     background-size: 5px;
 
 }
+
+#header {
+    width: 100%;
+    height: 60px;
+    background-color: #0054a6;
+    }
+#header-logo{
+    background-image: url(../images/KHK_logo_IKT-01-valge.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 85%;
+    width: 25%;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 5px;
+    }
+#header-title{
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vw;
+    display: block;
+    float: right;
+    margin-right: 38%;
+    margin-top: 10px;
+    }
 
 .opened{
     display:block !important;
@@ -65,6 +90,9 @@ h1,h2,h4,h5,h6 {
 		font-size: 24px;
 		margin-bottom:20px;
 	}
+	table h3{
+	    margin-left: -160px;
+	    }
 	h4{
 	    color:#000;
 	    font-size:16px;
@@ -170,6 +198,8 @@ td .col-list .btn{
 				height: 80% !important;
 				list-style: none;
 				float: left;
+				padding-left: 10px;
+                box-shadow: 0px 15px 25px -5px rgba(133,133,133,0.77);
 			}
 			
 			.syndmus {
@@ -191,7 +221,6 @@ td .col-list .btn{
 			ol ol, ol ul, ul ol, ul ul {
                 margin-bottom: 10px;
                 border: 2px solid rgba(45, 195, 208, 0.25);
-                border-radius: 100px;
                 padding: 10px 10px 5px 20px;
             }
             
@@ -291,12 +320,80 @@ td .col-list .btn{
 				}
 				
 		#logout {
-		    position: fixed;
-		    bottom: 5px;
-		    left: 5px;
+		        position: fixed;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
 		    }
 		 
 	    .glyphicon-log-out {
 	        font-size: 2em;
+	        color: #fff;
+	        }	    
+	   .glyphicon-log-out:hover {
+	        color: #ffcc19;
 	        }
+	        
+	        @media only screen and (max-width: 850px) {
+	                h1{
+	                    margin-right:300px !important;
+	                }
+	                
+	                table{
+	                    width:80% !important;
+	                }
+	                
+	                .collapse ul{
+                        width:70%;
+                    }
+                    
+                    h3{
+                        margin-left:-300px;    
+                    }
+	                    
+                    td > h3{
+                        margin-left:-80px;
+                    }
+                    
+                    #issues > li{
+                        width:795px !important;
+                        height: 60% !important;
+                    }
+                    
+                    h4{
+                        width:60%;
+                        }
+                        
+                    h2{
+                        margin-right:360px;
+                        }
+                    #prev{
+                        left:-70px;    
+                    }
+                    #next{
+                        right:140px;
+                    }
+                    #timeline{
+                        margin-left:12%;
+                    }
+	            }
+	            
+	            @media only screen and (max-width: 750px){
+	                    #next{
+	                        right:215px;    
+                        }
+	                }
+	                
+	                	            
+	            @media only screen and (max-width: 680px){
+	                    #next{
+	                        right:270px;    
+                        }
+	                }
+	                
+	            @media only screen and (max-width: 640px){
+	                    #next{
+	                        right:290px;    
+                        }
+	                }
 				

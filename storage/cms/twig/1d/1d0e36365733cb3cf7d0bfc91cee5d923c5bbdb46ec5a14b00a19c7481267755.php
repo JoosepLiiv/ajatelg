@@ -20,36 +20,38 @@ class __TwigTemplate_2e57e8bd806fb39f490ef3130a6a72d0b9425d96e5c05cbc0ff6dfa68e6
 <head>
 \t<meta charset=\"utf-8\">
 \t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">
-\t<meta name=\"author\" content=\"\">
+\t<meta name=\"author\" content=\"Joosep & Lars\">
+\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
 \t
 \t<title>Tartu KHK IKT osakonna ajatelg</title>
 \t<link href=\"https://fonts.googleapis.com/css?family=Rubik\" rel=\"stylesheet\">
 \t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
     <link rel=\"stylesheet\" href=\"";
-        // line 10
+        // line 11
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/css/style.css");
         echo "\" media=\"screen\" />
 \t<link rel=\"stylesheet\" href=\"";
-        // line 11
+        // line 12
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/css/magnific.css");
         echo "\" />
 \t
     <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
     <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
+    <script src=\"//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js\"></script>
     <script src=\"";
-        // line 15
+        // line 17
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/magnific.js");
         echo "\"></script>
     
     <!-- favicon -->
     <link rel=\"shortcut icon\" href=\"";
-        // line 18
+        // line 20
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/favicon.ico");
         echo "\">
 \t
 \t<!-- <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script> -->
 \t<script src=\"";
-        // line 21
+        // line 23
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/jquery.timelinr-0.9.6.js");
         echo "\"></script>
 \t<script>
@@ -64,13 +66,13 @@ class __TwigTemplate_2e57e8bd806fb39f490ef3130a6a72d0b9425d96e5c05cbc0ff6dfa68e6
 <body>
 \t
  ";
-        // line 33
+        // line 35
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 34
+        // line 36
         echo "
 </body>
 <script src=\"";
-        // line 36
+        // line 38
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/custom.js");
         echo "\"></script>
 </html>";
@@ -88,7 +90,7 @@ class __TwigTemplate_2e57e8bd806fb39f490ef3130a6a72d0b9425d96e5c05cbc0ff6dfa68e6
 
     public function getDebugInfo()
     {
-        return array (  74 => 36,  70 => 34,  68 => 33,  53 => 21,  47 => 18,  41 => 15,  34 => 11,  30 => 10,  19 => 1,);
+        return array (  76 => 38,  72 => 36,  70 => 35,  55 => 23,  49 => 20,  43 => 17,  35 => 12,  31 => 11,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -97,7 +99,8 @@ class __TwigTemplate_2e57e8bd806fb39f490ef3130a6a72d0b9425d96e5c05cbc0ff6dfa68e6
 <head>
 \t<meta charset=\"utf-8\">
 \t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">
-\t<meta name=\"author\" content=\"\">
+\t<meta name=\"author\" content=\"Joosep & Lars\">
+\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
 \t
 \t<title>Tartu KHK IKT osakonna ajatelg</title>
 \t<link href=\"https://fonts.googleapis.com/css?family=Rubik\" rel=\"stylesheet\">
@@ -107,6 +110,7 @@ class __TwigTemplate_2e57e8bd806fb39f490ef3130a6a72d0b9425d96e5c05cbc0ff6dfa68e6
 \t
     <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
     <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
+    <script src=\"//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js\"></script>
     <script src=\"{{ \"assets/js/magnific.js\"|theme }}\"></script>
     
     <!-- favicon -->

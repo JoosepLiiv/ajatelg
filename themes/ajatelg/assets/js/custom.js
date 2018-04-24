@@ -46,7 +46,7 @@ $( document ).ready(function() {
         $(".col-list").on('click', function(){
             if($(this).hasClass("opened")){
                 $(this).removeClass("opened");
-            }else{
+            } else {
             $(this).addClass("opened");
                 }
             });
@@ -74,4 +74,12 @@ $( document ).ready(function() {
 			verticalFit: true
 		}
     });
+    
+    
+    if(window.outerWidth < 850) {
+        $(".btn").on('click', function(){
+            // oleks vaja kerida
+            });
+}
+
 });

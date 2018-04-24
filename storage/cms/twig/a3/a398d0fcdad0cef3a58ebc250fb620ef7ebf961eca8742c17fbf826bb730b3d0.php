@@ -22,7 +22,7 @@ class __TwigTemplate_dad5bcd73e419723ea36408725fc45e28eed859f67aefd40fedabdc1fb8
     <div class=\"row\">
 
         <div class=\"col-md-6 login\">
-            <h3>Sign in</h3>
+        <h3>IKT osakonna ajatelg</h3>
             ";
             // line 7
             $context['__cms_partial_params'] = [];
@@ -70,7 +70,7 @@ class __TwigTemplate_dad5bcd73e419723ea36408725fc45e28eed859f67aefd40fedabdc1fb8
     <div class=\"row\">
 
         <div class=\"col-md-6 login\">
-            <h3>Sign in</h3>
+        <h3>IKT osakonna ajatelg</h3>
             {% partial __SELF__ ~ '::signin' %}
         </div>
 
