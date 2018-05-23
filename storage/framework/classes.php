@@ -210,4 +210,6 @@
   'RainLab\\Blog\\Components\\Categories' => 'plugins/rainlab/blog/components/Categories.php',
   'RainLab\\Blog\\Components\\RssFeed' => 'plugins/rainlab/blog/components/RssFeed.php',
   'Backend\\FormWidgets\\ColorPicker' => 'modules/backend/formwidgets/ColorPicker.php',
+  'Cms\\Models\\ThemeData' => 'modules/cms/models/ThemeData.php',
+  'System\\Classes\\SystemController' => 'modules/system/classes/SystemController.php',
 );

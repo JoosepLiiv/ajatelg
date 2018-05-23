@@ -13,7 +13,7 @@ redirect = "login"
     <div id="header-logo">
     </div>
     <div id="header-title">
-        IKT OSAKONNA AJATELG
+        IKT-OSAKONNA AJATELG
     </div>
     <div id="logout">
 	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
@@ -22,7 +22,7 @@ redirect = "login"
 <div id="timeline">
 		<ul id="dates">
 		{% for entry in entries %}
-		    <li class="{{ entry.color }}"><a href="#{{ entry.date|date('F jS, Y') }}">{{ entry.date|etdate("%BP </br> %Y") }}</a></li>
+		    <li class="{{ entry.color }} {% if entry.end_event %}end_event{% endif %}"><a href="#{{ entry.date|date('F jS, Y') }}">{{ entry.date|etdate("%BP %Y") }}</a></li>
 		{% endfor %}
 		</ul>
 		<ul id="issues">

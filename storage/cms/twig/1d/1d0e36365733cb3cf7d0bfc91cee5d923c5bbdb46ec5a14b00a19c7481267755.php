@@ -23,7 +23,7 @@ class __TwigTemplate_2e57e8bd806fb39f490ef3130a6a72d0b9425d96e5c05cbc0ff6dfa68e6
 \t<meta name=\"author\" content=\"Joosep & Lars\">
 \t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
 \t
-\t<title>Tartu KHK IKT osakonna ajatelg</title>
+\t<title>Tartu KHK IKT-osakonna ajatelg</title>
 \t<link href=\"https://fonts.googleapis.com/css?family=Rubik\" rel=\"stylesheet\">
 \t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
     <link rel=\"stylesheet\" href=\"";
@@ -102,7 +102,7 @@ class __TwigTemplate_2e57e8bd806fb39f490ef3130a6a72d0b9425d96e5c05cbc0ff6dfa68e6
 \t<meta name=\"author\" content=\"Joosep & Lars\">
 \t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
 \t
-\t<title>Tartu KHK IKT osakonna ajatelg</title>
+\t<title>Tartu KHK IKT-osakonna ajatelg</title>
 \t<link href=\"https://fonts.googleapis.com/css?family=Rubik\" rel=\"stylesheet\">
 \t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
     <link rel=\"stylesheet\" href=\"{{ \"assets/css/style.css\"|theme }}\" media=\"screen\" />

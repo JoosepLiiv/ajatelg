@@ -17,11 +17,15 @@ fields:
         label: 'octo.timeline::lang.form.color'
         span: auto
         required: 0
-        default: blue
+        default: Kopli
         type: dropdown
         options:
-            blue: Blue
-            red: Red
+            blue: Kopli
+            red: Põllu
+    end_event:
+        label: 'octo.timeline::lang.form.end_event'
+        type: checkbox
+        default: false
     text:
         label: 'octo.timeline::lang.form.text'
         size: large

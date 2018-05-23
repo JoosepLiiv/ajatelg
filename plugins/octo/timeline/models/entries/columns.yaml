@@ -20,3 +20,8 @@ columns:
         type: partial
         path: $/octo/timeline/models/entries/yesno.htm
         width: 60px
+    end_event:
+        label: 'octo.timeline::lang.list.end_event'
+        type: partial
+        path: $/octo/timeline/models/entries/end_event.htm
+        width: 60px

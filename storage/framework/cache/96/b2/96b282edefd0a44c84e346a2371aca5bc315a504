@@ -1,4 +1,4 @@
-1524555360a:1:{s:9:"index.htm";a:11:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:1582:"title = "index"
+1526983398a:1:{s:9:"index.htm";a:11:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:1621:"title = "index"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -13,7 +13,7 @@ redirect = "login"
     <div id="header-logo">
     </div>
     <div id="header-title">
-        IKT OSAKONNA AJATELG
+        IKT-OSAKONNA AJATELG
     </div>
     <div id="logout">
 	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
@@ -22,7 +22,7 @@ redirect = "login"
 <div id="timeline">
 		<ul id="dates">
 		{% for entry in entries %}
-		    <li class="{{ entry.color }}"><a href="#{{ entry.date|date('F jS, Y') }}">{{ entry.date|etdate("%BP </br> %Y") }}</a></li>
+		    <li class="{{ entry.color }} {% if entry.end_event %}end_event{% endif %}"><a href="#{{ entry.date|date('F jS, Y') }}">{{ entry.date|etdate("%BP %Y") }}</a></li>
 		{% endfor %}
 		</ul>
 		<ul id="issues">
@@ -44,11 +44,11 @@ redirect = "login"
 	{% framework %}
 	<script>
 	
-	</script>";s:5:"mtime";i:1524042551;s:6:"markup";s:1461:"<div id="header">
+	</script>";s:5:"mtime";i:1525850690;s:6:"markup";s:1500:"<div id="header">
     <div id="header-logo">
     </div>
     <div id="header-title">
-        IKT OSAKONNA AJATELG
+        IKT-OSAKONNA AJATELG
     </div>
     <div id="logout">
 	<a data-request="onLogout" data-request-data="redirect: '/login'"><span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Logi välja"></span></a>
@@ -57,7 +57,7 @@ redirect = "login"
 <div id="timeline">
 		<ul id="dates">
 		{% for entry in entries %}
-		    <li class="{{ entry.color }}"><a href="#{{ entry.date|date('F jS, Y') }}">{{ entry.date|etdate("%BP </br> %Y") }}</a></li>
+		    <li class="{{ entry.color }} {% if entry.end_event %}end_event{% endif %}"><a href="#{{ entry.date|date('F jS, Y') }}">{{ entry.date|etdate("%BP %Y") }}</a></li>
 		{% endfor %}
 		</ul>
 		<ul id="issues">

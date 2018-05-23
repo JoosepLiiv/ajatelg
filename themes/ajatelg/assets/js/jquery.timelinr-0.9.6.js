@@ -67,7 +67,10 @@ jQuery.fn.timelinr = function(options){
 				var currentIndex = $(this).parent().prevAll().length;
 				// moving the elements
 				if(settings.orientation == 'horizontal') {
-					$(settings.issuesDiv).animate({'marginLeft':-widthIssue*currentIndex},{queue:false, duration:settings.issuesSpeed});
+					$(settings.issuesDiv).animate({'marginLeft':-widthIssue*currentIndex+50},{queue:false, duration:settings.issuesSpeed});
+				        if(window.outerWidth < 850) {
+				            $(settings.issuesDiv).animate({'marginLeft':-widthIssue*currentIndex-70},{queue:false, duration:settings.issuesSpeed});
+				    }
 				} else if(settings.orientation == 'vertical') {
 					$(settings.issuesDiv).animate({'marginTop':-heightIssue*currentIndex},{queue:false, duration:settings.issuesSpeed});
 				}
@@ -102,6 +105,10 @@ jQuery.fn.timelinr = function(options){
 				$(this).addClass(settings.datesSelectedClass);
 				if(settings.orientation == 'horizontal') {
 					$(settings.datesDiv).animate({'marginLeft':defaultPositionDates-(widthDate*currentIndex)},{queue:false, duration:'settings.datesSpeed'});
+					// -200px nihutab telefonivaates kuupäevi teljel vasakule poole, et need oleksid ka telefonivaates paremini kättesaadavad
+					if(window.outerWidth < 850) {
+					    $(settings.datesDiv).animate({'marginLeft':defaultPositionDates-(widthDate*currentIndex)-200},{queue:false, duration:'settings.datesSpeed'});
+					    }
 				} else if(settings.orientation == 'vertical') {
 					$(settings.datesDiv).animate({'marginTop':defaultPositionDates-(heightDate*currentIndex)},{queue:false, duration:'settings.datesSpeed'});
 				}

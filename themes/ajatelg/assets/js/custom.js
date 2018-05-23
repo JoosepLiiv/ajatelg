@@ -74,12 +74,13 @@ $( document ).ready(function() {
 			verticalFit: true
 		}
     });
-    
-    
-    if(window.outerWidth < 850) {
-        $(".btn").on('click', function(){
-            // oleks vaja kerida
-            });
-}
+        
+    // Kui lehel on tühi paragrahv, siis see kustutatakse.
+    var paragraphs = $('p');
+    for(var b = 0; b < paragraphs.length; b++){
+            if(paragraphs[b].innerHTML === ""){
+                $(paragraphs[b]).remove();
+                }
+        }
 
 });

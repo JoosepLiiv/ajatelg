@@ -1,13 +1,7 @@
 {% if not user %}
 
-    <div class="row">
-
-        <div class="col-md-6 login">
-        <h3>IKT osakonna ajatelg</h3>
+	<!-- Login form -->
             {% partial __SELF__ ~ '::signin' %}
-        </div>
-
-    </div>
 
 {% else %}
 

@@ -20,7 +20,7 @@ class __TwigTemplate_1f563023551a57d0d10fb4734ddb4c9772d3cd23778d0a298077c0bd358
     <div id=\"header-logo\">
     </div>
     <div id=\"header-title\">
-        IKT OSAKONNA AJATELG
+        IKT-OSAKONNA AJATELG
     </div>
     <div id=\"logout\">
 \t<a data-request=\"onLogout\" data-request-data=\"redirect: '/login'\"><span class=\"glyphicon glyphicon-log-out\" aria-hidden=\"true\" title=\"Logi välja\"></span></a>
@@ -36,10 +36,14 @@ class __TwigTemplate_1f563023551a57d0d10fb4734ddb4c9772d3cd23778d0a298077c0bd358
             // line 14
             echo "\t\t    <li class=\"";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["entry"], "color", array()), "html", null, true);
+            echo " ";
+            if (twig_get_attribute($this->env, $this->getSourceContext(), $context["entry"], "end_event", array())) {
+                echo "end_event";
+            }
             echo "\"><a href=\"#";
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["entry"], "date", array()), "F jS, Y"), "html", null, true);
             echo "\">";
-            echo call_user_func_array($this->env->getFilter('etdate')->getCallable(), array(twig_get_attribute($this->env, $this->getSourceContext(), $context["entry"], "date", array()), "%BP </br> %Y"));
+            echo call_user_func_array($this->env->getFilter('etdate')->getCallable(), array(twig_get_attribute($this->env, $this->getSourceContext(), $context["entry"], "date", array()), "%BP %Y"));
             echo "</a></li>
 \t\t";
         }
@@ -107,7 +111,7 @@ class __TwigTemplate_1f563023551a57d0d10fb4734ddb4c9772d3cd23778d0a298077c0bd358
 
     public function getDebugInfo()
     {
-        return array (  93 => 34,  90 => 33,  84 => 29,  75 => 26,  71 => 25,  66 => 24,  62 => 23,  55 => 19,  50 => 16,  37 => 14,  33 => 13,  19 => 1,);
+        return array (  97 => 34,  94 => 33,  88 => 29,  79 => 26,  75 => 25,  70 => 24,  66 => 23,  59 => 19,  54 => 16,  37 => 14,  33 => 13,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -116,7 +120,7 @@ class __TwigTemplate_1f563023551a57d0d10fb4734ddb4c9772d3cd23778d0a298077c0bd358
     <div id=\"header-logo\">
     </div>
     <div id=\"header-title\">
-        IKT OSAKONNA AJATELG
+        IKT-OSAKONNA AJATELG
     </div>
     <div id=\"logout\">
 \t<a data-request=\"onLogout\" data-request-data=\"redirect: '/login'\"><span class=\"glyphicon glyphicon-log-out\" aria-hidden=\"true\" title=\"Logi välja\"></span></a>
@@ -125,7 +129,7 @@ class __TwigTemplate_1f563023551a57d0d10fb4734ddb4c9772d3cd23778d0a298077c0bd358
 <div id=\"timeline\">
 \t\t<ul id=\"dates\">
 \t\t{% for entry in entries %}
-\t\t    <li class=\"{{ entry.color }}\"><a href=\"#{{ entry.date|date('F jS, Y') }}\">{{ entry.date|etdate(\"%BP </br> %Y\") }}</a></li>
+\t\t    <li class=\"{{ entry.color }} {% if entry.end_event %}end_event{% endif %}\"><a href=\"#{{ entry.date|date('F jS, Y') }}\">{{ entry.date|etdate(\"%BP %Y\") }}</a></li>
 \t\t{% endfor %}
 \t\t</ul>
 \t\t<ul id=\"issues\">

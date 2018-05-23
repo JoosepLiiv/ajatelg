@@ -19,7 +19,7 @@ body {
     background-color: #0054a6;
     }
 #header-logo{
-    background-image: url(../images/KHK_logo_IKT-01-valge.png);
+    background-image: url(../images/KHK_teenus%C3%BCksused_IKT_C%20valge.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 85%;
@@ -38,6 +38,11 @@ body {
     margin-top: 10px;
     }
 
+table {
+    width: 95% !important;
+    margin-left: 40px;
+    }
+
 .opened{
     display:block !important;
 }
@@ -45,6 +50,10 @@ body {
 .btn-info:focus{
     border-color:#31b0d5;
 }
+
+.btn-info {
+    background-color: rgb(0, 153, 216);
+    }
 
 .btn{
     border-radius:100px;
@@ -55,7 +64,7 @@ a[aria-expanded="true"]{
 }
 
 a {
-	color: rgb(0,153,213);
+	color: rgb(0,153,216);
 	text-decoration: none;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -86,7 +95,7 @@ h1,h2,h4,h5,h6 {
 	}
 	h3 {
 	    text-align:center;
-	    color: #ffcc00;
+	    color: rgb(0, 153, 216);
 		font-size: 24px;
 		margin-bottom:20px;
 	}
@@ -97,6 +106,7 @@ h1,h2,h4,h5,h6 {
 	    color:#000;
 	    font-size:16px;
 	    text-align:justify;
+	    padding: 0px 10px;
 	    }
 	
 ul{
@@ -119,7 +129,8 @@ td{
 }
 
 td .col-list .btn{
-    margin-left:-36px;
+    margin-left:-55px;
+    margin-right: 20px;
     margin-bottom:10px;
     
 }
@@ -174,8 +185,12 @@ td .col-list .btn{
 			        background: url('../images/biggerdot3.png') center bottom no-repeat;
 			    } 
 			    
+			.end_event {
+			        line-height: 130px;
+			    }
+			    
 				#dates a {
-					line-height: 43px;
+					line-height: 55px;
 					padding-bottom: 10px;
 				}
 				#dates .selected {
@@ -192,13 +207,13 @@ td .col-list .btn{
 			height: 100%;
 			overflow: hidden;
 			margin-top:20px;
+			box-shadow: 0px 15px 25px -5px rgba(133,133,133,0.77)
 		}	
 			#issues > li {
 				width: 800px;
-				height: 80% !important;
+				height: 75% !important;
 				list-style: none;
 				float: left;
-				padding-left: 10px;
                 box-shadow: 0px 15px 25px -5px rgba(133,133,133,0.77);
 			}
 			
@@ -251,7 +266,7 @@ td .col-list .btn{
 				    transform: scale(0.7,0.7);
 				}
 				#issues li h1 {
-					color: #ffcc00;
+					color: rgb(255, 230, 0);
 					font-size: 38px;
 					margin: 20px 0;
 					text-shadow: #000 1px 1px 2px;
@@ -261,6 +276,8 @@ td .col-list .btn{
 					font-weight: normal;
 					line-height: 22px;
 					display: inline-block;
+					padding: 0px 10px;
+					margin-left: 25px;
 				}
 				
 				#issues li>p.col-list {
@@ -270,7 +287,7 @@ td .col-list .btn{
 				
 				#issues li td>p.col-list {
 				        margin-left: 40px;
-				        margin-right: 0px;
+				        margin-right: -25px;
 				    }
 		
 		#grad_left,
@@ -307,11 +324,11 @@ td .col-list .btn{
 				background-position: 0 -76px;
 			}
 			#next {
-				right: -10px;
+				right: -35px;
 				background-image: url('../images/next.png');
 			}
 			#prev {
-				left: -45px;
+				left: 10px;
 				background-image: url('../images/prev.png');
 			}
 				#next.disabled,
@@ -336,7 +353,7 @@ td .col-list .btn{
 	        
 	        @media only screen and (max-width: 850px) {
 	                h1{
-	                    margin-right:300px !important;
+	                    margin-right:0px !important;
 	                }
 	                
 	                table{
@@ -347,53 +364,81 @@ td .col-list .btn{
                         width:70%;
                     }
                     
-                    h3{
-                        margin-left:-300px;    
-                    }
-	                    
-                    td > h3{
-                        margin-left:-80px;
+                    table h3{
+                        margin-left:0px;
+                        padding-left: 5px;
                     }
                     
                     #issues > li{
-                        width:795px !important;
+                        width: 680px !important;
                         height: 60% !important;
                     }
                     
-                    h4{
-                        width:60%;
-                        }
-                        
-                    h2{
-                        margin-right:360px;
-                        }
                     #prev{
-                        left:-70px;    
+                        left:100px;    
                     }
                     #next{
-                        right:140px;
+                        right:-150px;
                     }
                     #timeline{
-                        margin-left:12%;
+                        margin-left:19%;
                     }
+    				#issues li p {
+					display: block;
 	            }
 	            
 	            @media only screen and (max-width: 750px){
 	                    #next{
-	                        right:215px;    
+	                        right:250px;    
                         }
-	                }
+                        #prev{
+                            left:-120px;    
+                        }
+                        #timeline{
+                            margin-left:17%;
+                    }
+	        }
 	                
 	                	            
 	            @media only screen and (max-width: 680px){
 	                    #next{
-	                        right:270px;    
+	                        right:285px;    
                         }
+                        
+	                    #prev{
+	                        left:-85px;    
+                        }
+                        #timeline{
+                            margin-left:14%;
+                    }
 	                }
 	                
 	            @media only screen and (max-width: 640px){
 	                    #next{
-	                        right:290px;    
+	                        right:300px;    
                         }
+                        #prev{
+                            left: -80px;    
+                        }
+                        #timeline{
+                            margin-left:13%;
+                    }
+                    
+                    #issues > li{
+                        width: 500px !important;
+                        height: 60% !important;
+                    }
+	                }
+	                
+	            @media only screen and (max-width: 580px){
+	                    #next{
+	                        right:330px;    
+                        }
+                        #prev{
+                            left:-35px;    
+                        }
+                        #timeline{
+                            margin-left:7%;
+                    }
 	                }
 				

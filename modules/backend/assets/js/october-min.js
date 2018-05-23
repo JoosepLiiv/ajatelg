@@ -532,7 +532,7 @@ event.preventDefault()
 return true})
 $(document).on('ready',function(){if(!window.swal)return
 var swal=window.swal
-window.sweetAlert=window.swal=function(message,callback){if(typeof message==='object'){message.confirmButtonText=message.confirmButtonText||$.oc.lang.get('alert.confirm_button_text')
+window.sweetAlert=window.swal=function(message,callback){if(typeof message==='object'){message.confirmButtonText=message.confirmButtonText||$.oc.lang.get('OK')
 message.cancelButtonText=message.cancelButtonText||$.oc.lang.get('alert.cancel_button_text')}
 else{message={title:message,confirmButtonText:$.oc.lang.get('alert.confirm_button_text'),cancelButtonText:$.oc.lang.get('alert.cancel_button_text')}}
 swal(message,callback)}})
